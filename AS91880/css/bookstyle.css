@@ -1,0 +1,102 @@
+﻿body {
+    margin: auto;
+    padding: 10px;
+    color: #cd6645;
+    font-family: 'Lato', sans-serif;
+}
+
+/*---- Grid Setup Start ----*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo banner banner" 
+        "nav nav nav" 
+        "main main side" 
+        "footer footer footer";
+    grid-gap: 4px;
+}
+
+/*---- Grid Setup End ----*/
+
+/*---- Area styling Start ----*/
+
+.box {
+    border: solid 1px #cd6645;
+    padding: 20px;
+    background-color: #eed4bb;
+    border-radius: 10px;
+}
+
+/*---- Area Colouring ----*/
+
+/** Logo, banner, footer, backgrounds are the same **/
+.logo, .banner, .footer {
+    background-color: #899977;
+    color: white;
+}
+
+/*---- Area Specific ----*/
+
+
+.logo {
+    background-image: url("/images/DimSum.jpg");
+    grid-area: logo;
+    padding: 0;
+    width: 200px;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.nav {
+    background-color: #febb57;
+    color: black;
+    grid-area: nav;
+    font-size: 130%;
+    text-align: center;
+}
+
+.main {
+    background-color: #cd6645;
+    color: black;
+    grid-area: main;
+}
+
+.side {
+    background-color: #eed4bb;
+    color: black;
+    grid-area: side;
+    padding:0;
+    text-align: left;
+    
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/*---- Area styling End ----*/
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*---- Navigation styling ----*/
+
+.nav a {
+    font-weight: bold;
+}
+
+.nav a:visited, .nav a:link {
+    color: black;
+}
+
+.nav a:hover{
+    color: #774312;
+    text-decoration: none;
+}
+
+/*---- Side bar ----*/
